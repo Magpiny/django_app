@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Pollster {% block title %}  {% endblock %}</title>
+
+    <!--   <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />  -->
+    <link rel="stylesheet" type="text/css" href="{% static 'all.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static "bootstrap.css" %}">
+
+</head>
+<body>
+    <!--Navbar-->
+    {% include 'partials/_navbar.html' %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 m-auto">
+
+                {% block content %}  
+
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+</html>
